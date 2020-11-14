@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:exported="true"
+    tools:context=".Main4Activity">
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的名字"
+        />
+    <Button
+        android:id="@+id/bt1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="按钮"
+        android:layout_below="@+id/et1"
+        />
+    <ProgressBar
+        android:id="@+id/pb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:layout_below="@+id/bt1"
+        />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_below="@+id/pb1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+</RelativeLayout>
